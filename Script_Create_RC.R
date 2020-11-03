@@ -18,3 +18,8 @@ usethis::use_r("data_wildfinder") #cree fichier R pour fct
 #ajout des packages dont on a besoin
 usethis::use_package("here")
 usethis::use_package("readr")
+
+#deplacer readme dans dossier data
+#en creer un autre pour le projet
+rrtools::use_readme_rmd()
+#efface conduct and contributing (pas besoin ici)
