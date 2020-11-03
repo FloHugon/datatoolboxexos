@@ -1,0 +1,15 @@
+Package: Exos
+Title: Data and Code for the CESAB Exos
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Floren",
+           family = "HUGON",
+           role = c("aut", "cre"),
+           email = "floren.hugon@live.fr")
+Description: Provides Data and Code for the CESAB Exos
+License: MIT + file LICENSE
+ByteCompile: true
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
