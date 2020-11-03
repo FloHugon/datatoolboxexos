@@ -39,7 +39,7 @@ sp_eco <- Exos::data_mammals_ecoregions()
 
 ```
 ## 
-## ── Column specification ────────────────────────────────────────────────────────
+## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────────
 ## cols(
 ##   ecoregion_id = col_character(),
 ##   species_id = col_double()
