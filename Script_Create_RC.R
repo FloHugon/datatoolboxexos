@@ -44,3 +44,8 @@ devtools::check()
 
 #permet de charger les donnees
 devtools::load_all()
+
+#Fichier md tres bien affiche sous GitHub, creer un fichier exo
+
+Exos::data_mammals_ecoregions() #id des eco regions et des sp
+
