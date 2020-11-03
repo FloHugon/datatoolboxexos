@@ -23,3 +23,24 @@ usethis::use_package("readr")
 #en creer un autre pour le projet
 rrtools::use_readme_rmd()
 #efface conduct and contributing (pas besoin ici)
+
+#pour installer tous les packages present dans le fichier description (champ Imports)
+#si deja les packages, R va les mettre a jour
+devtools::install_deps()
+
+#generer la documentation des fonctions, cree le dossier man
+devtools::document()
+
+#construire les elements du package
+#onglet Build entre Connections et Git (pas entre Session et Debug)
+#charge automatiquement notre package
+library(Exos)
+?Exos::data_ecoregions() #cree un package avec nos fonctions
+
+#verifier notre package
+devtools::check()
+#verifie qu'on a pas des = mais des <-
+#on ignore les warnings et les notes, ne sont pas des erreurs, on les comprends
+
+#permet de charger les donnees
+devtools::load_all()
