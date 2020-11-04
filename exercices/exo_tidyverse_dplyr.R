@@ -30,7 +30,7 @@ ursus_eco <- inner_join(ursus, sp_eco) %>%
 #cb de royaume, biome, d'ecoregion uniques a t'on pour chaque sp
 ursus_eco %>%
   group_by(as.factor(species_id)) %>%
-  summarise(ecoregion, realm, biome)
+  summarise(ecoregion, realm, biome) #false version
 
 ursus_n <- ursus_eco %>%
   group_by(sci_name) %>%  #mieux de faire avec sci_name car on garde l'info sur l'sp

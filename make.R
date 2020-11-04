@@ -16,7 +16,16 @@ devtools::install_deps()
 devtools::load_all() #fct dispo dans notre projet de recherche
 
 # ----- Knit exo dplyr : compile les exercices
-rmarkdown::render(here::here("exercices","exo_dplyr.Rmd"))
+#rmarkdown::render(here::here("exercices","exo_dplyr.Rmd"))
 
 # ----- Knit exo ggplot2 : execute tout le script exo_ggplot2
-rmarkdown::render(here::here("exercices","exo_ggplot2.Rmd"))
+#rmarkdown::render(here::here("exercices","exo_ggplot2.Rmd"))
+
+
+# ----- Drake, reouvre une autre session
+## Execute plan
+drake::r_make() #ca a cree les targets, ce qui est demande dans le plan (_drake.r a deja loadall)
+
+## Visualize the plan, sortie graphique dans Viewer (a droite de Help)
+drake::r_vis_drake_graph(targets_only = TRUE)
+drake::r_vis_drake_graph() #affiche toutes les fonctions
