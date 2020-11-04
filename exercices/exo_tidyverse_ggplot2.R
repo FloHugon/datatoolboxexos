@@ -102,4 +102,5 @@ dat %>% filter(!is.na(litter_size), !is.na(longevity)) %>% #enlever les lignes a
   #regression lineaire par famille (car on mit dans aes, col=family), se=F permet d'enlever l'IC
   labs(x="longevity (month)", y="litter size", title="Scatterplot") +
 
-  facet_wrap( ~ family, nrow = 3)
+  facet_wrap( ~ family, nrow = 3)+
+  guides(color=guide_legend(title = "Family")) #ca marche mais c'est lourd
