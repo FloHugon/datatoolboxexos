@@ -42,7 +42,7 @@ devtools::check()
 #verifie qu'on a pas des = mais des <-
 #on ignore les warnings et les notes, ne sont pas des erreurs, on les comprends
 
-#permet de charger les donnees
+#permet de charger les fcts, les packages
 devtools::load_all()
 
 #Fichier md tres bien affiche sous GitHub, creer un fichier exo
