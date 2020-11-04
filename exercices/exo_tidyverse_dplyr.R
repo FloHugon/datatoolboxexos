@@ -1,4 +1,4 @@
-## exercice 1 TidyVerse, utiliser dplyr
+## exercice 1 TidyVerse, utiliser dplyr, 03.11.2020
 
 devtools::load_all()
 

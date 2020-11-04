@@ -1,5 +1,5 @@
 Package: Exos
-Title: Data and Code for the CESAB Exos
+Title: Data and Code for the CESAB Exos 
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Floren",
@@ -15,4 +15,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     here,
-    readr
+    readr,
+    magrittr

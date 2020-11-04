@@ -1,7 +1,7 @@
 # Creer mon premier Research Compendium
 #Research Compendium, 3 nov 2020
 
-#installation de rrtools pour ameliorer l'elaboration de Researah Compendium
+#installation de rrtools pour ameliorer l'elaboration de Research Compendium
 #chercher rrtools sur GitHub
 install.packages("devtools")
 devtools::install_github("benmarwick/rrtools")
@@ -15,7 +15,7 @@ rrtools::use_compendium("../Exos/", open = FALSE) #repondre yes aux deux questio
 #premiere fonction pour lire les donnees dont on aura besoin dans les differents exercices
 usethis::use_r("data_wildfinder") #cree fichier R pour fct
 
-#ajout des packages dont on a besoin
+#ajout des packages dont on a besoin (dans DESCRIPTION onglet Imports)
 usethis::use_package("here")
 usethis::use_package("readr")
 
@@ -31,8 +31,10 @@ devtools::install_deps()
 #generer la documentation des fonctions, cree le dossier man
 devtools::document()
 
-#construire les elements du package
+#construire les elements du package, cliquer sur Build Install and Restart
 #onglet Build entre Connections et Git (pas entre Session et Debug)
+#Obtention de l'onglet suite a la re-ouverture du projet
+
 #charge automatiquement notre package
 library(Exos)
 ?Exos::data_ecoregions() #cree un package avec nos fonctions
